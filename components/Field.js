@@ -3,8 +3,10 @@ const React = require('react');
 class Field extends React.Component {
   render () {
     const { player, onClick } = this.props;
+    debugger
     return (
-      <button>
+      <button onClick={onClick} className="field" disabled={!!player}>
+        {player}
       </button>
     );
   }
